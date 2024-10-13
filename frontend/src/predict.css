@@ -1,0 +1,285 @@
+/* App.css */
+.form-container {
+    text-align: center;
+    font-family: Arial, sans-serif;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  button:hover {
+    background-color: #218838;
+  }
+  
+  .dropzone {
+    border: 2px dashed #ccc;
+    border-radius: 10px;
+    padding: 40px;
+    cursor: pointer;
+    margin: 20px 0;
+  }
+  
+  .dropzone.active {
+    background-color: #f0f8ff;
+    border-color: #28a745;
+  }
+  
+  .dropzone p {
+    font-size: 16px;
+    color: #666;
+  }
+  
+  .output-box {
+    margin-top: 30px;
+    padding: 10px;
+    border: 2px solid #ddd;
+    background-color: #f9f9f9;
+  }
+  
+  table {
+    margin: 20px auto;
+    width: 80%;
+    border-collapse: collapse;
+  }
+  
+  table, th, td {
+    border: 1px solid #ddd;
+  }
+  
+  th, td {
+    padding: 12px;
+  }
+  
+  th {
+    background-color: #28a745;
+    color: white;
+  }
+  
+  td {
+    text-align: center;
+  }
+
+  
+  /* yhaha se new chat gpt ka code */
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .uploaded-image-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .uploaded-image {
+    max-width: 100%;
+    max-height: 200px;
+  }
+  
+  .remove-file-button {
+    margin-top: 10px;
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  .results {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .result-image {
+    text-align: center;
+  }
+  
+  .result-image img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+  }
+  
+  .result-table {
+    margin-top: 20px;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  .result-table th, .result-table td {
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 8px;
+  }
+  
+  .classify-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: green;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+
+
+  /* Image ke lia */
+
+  .image-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .image-item {
+    text-align: center;
+  }
+  
+  .round-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+
+  .background-image {
+    background-image: url('./backgrounf.avif');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.9;
+  }
+
+
+  /* Naya for more than 1 output */
+  .results-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .result-block {
+    flex: 1 1 30%; /* Each result will take up 30% of the width */
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+  }
+  
+  .prediction-header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    border-radius: 4px;
+  }
+  
+  .result-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+  }
+  
+  .result-table th,
+  .result-table td {
+    padding: 8px;
+    text-align: center;
+    border: 1px solid #ddd;
+  }
+  
+  .result-table th {
+    background-color: #4CAF50;
+    color: white;
+  }
+
+  
+
+  /*  */
+  .results-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .result-block {
+    flex: 1 1 30%; /* Each result will take up 30% of the width */
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    text-align: center; /* Center align the content */
+  }
+  
+  .prediction-header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    border-radius: 4px;
+  }
+  
+  .result-image {
+    width: 100px; /* Set the size of the image */
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+  
+  .result-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+  }
+  
+  .result-table th,
+  .result-table td {
+    padding: 8px;
+    text-align: center;
+    border: 1px solid #ddd;
+  }
+  
+  .result-table th {
+    background-color: #4CAF50;
+    color: white;
+  }
+
+  
+  /*  */
+  /*  */
+  /* In your predict.css or a separate CSS file */
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.particles-container {
+  position: absolute; /* This keeps it in the background */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -2; /* Lower than the animated background */
+}
+
+  
+  
